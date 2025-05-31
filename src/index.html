@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h1>Task Buddy</h1>
+        <hr>
+        <button id="addTask">Add Task +</button>
+        <div class="btn-all-todos active sidebar-btn">All Todos</div>
+        <h2>My Projects</h2>
+        <hr>
+        <div class="project-list" id="projectsList">
+            <button id="addProject">Add Project +</button>
+            <div class="project-item sidebar-btn">Work</div>
+            <div class="project-item sidebar-btn">Hobby</div>
+            <div class="project-item sidebar-btn">Personal</div>
+            <div id="projects" class="project-item sidebar-btn">
+
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="todo-container">
+            <h1>All Todos</h1>
+            <div class="list">
+                <div class="todo-card">
+                    <div class="details">
+                        <div class="userDate">2025-5-8</div>
+                        <div class="userProjects">Work</div>
+                        <div class="userPriority">Normal</div>
+                    </div>
+                    <h2 class="userTitle">Title</h2>
+                    <p class="userDescription">ihgfuktdyuytf f rd7r6ufuyih ytd rdu6tguykg vytd rd uyt iyuf</p>
+                    <!-- <input type="checkbox" id="complete" value="complete"> -->
+                     <div class="button-group"> 
+                         <button class="complete">Complete</button>
+                         <button class="delete">Delete</button>
+                     </div>
+                </div>
+            </div>
+<!-- models -->
+            <div id="form">
+                <div class="form-container">
+                    <h1>Add Task</h1>
+                    <form id="myForm">
+                        <input type="text" name="title" id="title" placeholder="Title" required>
+                        <textarea type="textarea" name="description" id="description" placeholder="Note"></textarea>
+                        <input type="date" name="date" id="date">
+                        <select name="priority" id="priority">
+                            <option value="noPriority" default>No Priority</option>
+                            <option value="low">Low</option>
+                            <option value="normal">Normal</option>
+                            <option value="high">High</option>
+                        </select>
+                        <select name="projects" id="projectsSelect">
+                            <option value="">Select Project</option>
+                            <option value="work">Work</option>
+                            <option value="hobby">Hobby</option>
+                        </select>
+                        <button type="button" value="cancel" id="cancel">Cancel</button>
+                        <button type="submit" id="submit">Done</button>
+                    </form>
+                </div>
+            </div>
+            <div id="form2">
+                <div class="project-container">
+                    <h1>Add Project</h1>
+                    <form id="projectForm">
+                        <input type="text" name="project" id="project" placeholder="Project" required>
+                        <button type="button" value="cancel" id="cancel2">Cancel</button>
+                        <button type="submit" id="submit2">Done</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
