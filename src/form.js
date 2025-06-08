@@ -20,6 +20,7 @@ class FormData {
 const createTodoCard = (todo) => {
     const todoCard = document.createElement('div');
     todoCard.classList.add('todo-card');
+    todoCard.setAttribute('data-project', todo.projects)
 
     const detailsDiv = document.createElement('div');
     detailsDiv.classList.add('details');

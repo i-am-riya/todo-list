@@ -17,6 +17,9 @@ const handleProjectSubmission = (projectDataObj, projects) => {
     const projectName = projectData.name;
     projects.textContent = projectName;
     localStorage.setItem("name", projectName);
+    const formProject = document.createElement('option');
+    formProject.textContent = projectName;
+    document.getElementById('projectsSelect').appendChild(formProject)
     document.getElementById('projectForm').reset();
 
 };
